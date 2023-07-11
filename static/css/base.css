@@ -70,6 +70,10 @@ body {
     border: 1px solid black !important;
 }
 
+.bg-pink{
+    background-color:rgba(193, 177, 209, 0.7);
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
