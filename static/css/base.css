@@ -52,14 +52,13 @@ body {
     color: white;
 }
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
+.order-now-button:hover,
+.order-now-button:active,
+.order-now-button:focus,
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
-    color: white;
+    background: #ddd6dc;
 }
 
 .text-black {
