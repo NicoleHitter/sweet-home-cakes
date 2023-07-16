@@ -8,7 +8,7 @@
                 <a href="{% url 'products' %}?sort=category&direction=asc"  class="dropdown-item">By Category</a>
                 <a href="{% url 'products' %}?sort=rating&direction=desc"  class="dropdown-item ">By Rating</a>
                 <a href="{% url 'products' %}?sort=price&direction=asc"  class="dropdown-item ">By Price</a>
-                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}?category=cakes,chocolate_cakes,muffins,cookies,macarons,custard" class="dropdown-item">All Products</a>
             </div>
         </li>
 
@@ -18,7 +18,7 @@
                 Bundles
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="{% url 'products' %}?category=cake_bundles,chocolate,custard,birthday,cakes,deals,chocolate" class="dropdown-item">Cake Bundles</a>
+                <a href="{% url 'products' %}?category=cakes,chocolate_cakes" class="dropdown-item">Cake Bundles</a>
                 <a href="{% url 'products' %}?category=muffins" class="dropdown-item">Muffins</a>
                 <a href="{% url 'products' %}?category=cookies" class="dropdown-item">Cookies</a>
                 <a href="{% url 'products' %}?category=macarons" class="dropdown-item">Macarons</a>
