@@ -31,6 +31,8 @@ SECRET_KEY = 'django-insecure-=^jwj4&xpwf48mdk=#o!%lzsf=m785wk&$d47en$b_v==a5u=6
 
 DEBUG = False
 
+DISABLE_COLLESTATIC=1
+
 
 ALLOWED_HOSTS = ['NicoleHitter/sweet-home-cakes.herokuapp.com', 'localhost']
 
@@ -178,7 +180,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 MEDIA_URL = '/media/'
