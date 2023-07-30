@@ -1,0 +1,26 @@
+{% load static %}
+{% block content %}
+
+<footer class="footer mt-auto py-3 dark-bg">
+    <div class="row">
+        <div class="col-md-6 favs">
+            <a href="https://facebook.com" target="_blank" rel="noopener"
+                aria-label="Visit our Facebook page(opens in a new tab)"><i class="fa fa-facebook"></i></a>
+       
+            <a href="https://twitter.com" target="_blank" rel="noopener"
+                aria-label="Visit our Twitter page(opens in a new tab)"><i class="fa fa-twitter"></i></a>
+       
+            <a href="https://youtube.com" target="_blank" rel="noopener"
+                aria-label="Visit our Youtube page(opens in a new tab)"><i class="fa fa-youtube"></i></a>
+    
+            <a href="https://instagram.com" target="_blank" rel="noopener"
+                aria-label="Visit our Instagram page(opens in a new tab)"><i class="fa fa-instagram"></i></a>
+            </div>
+        <div class="col-md-6 contact">
+            <a href="{% url 'contact' %}" class="nav-link "><h5 class="logo-font my-0"><strong>Contact Us</strong></h5>
+            </a>
+        </div>
+    </div>
+</footer>
+
+{% endblock %}
