@@ -1,0 +1,1 @@
+web: gunicorn sweet_home_cakes.wsgi:application
