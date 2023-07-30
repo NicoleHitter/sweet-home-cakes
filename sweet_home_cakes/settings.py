@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-=^jwj4&xpwf48mdk=#o!%lzsf=m785wk&$d47en$b_v==a5u=6
 # SECURITY WARNING: don't run with debug turned on in production!
 
 DEBUG = 'DEVELOPMENT' in os.environ
-
+DISABLE_COLLESTATIC= 'DISABLE_COLLESTATIC' in os.environ
 
 ALLOWED_HOSTS = ['NicoleHitter/sweet-home-cakes.herokuapp.com', 'localhost']
 
