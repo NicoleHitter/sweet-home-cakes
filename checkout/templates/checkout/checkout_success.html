@@ -22,8 +22,11 @@
                 <h2 class="logo-font mb-4">Thank You</h2>
                 <hr>
                 <p class="text-black">Your order information is below. A confirmation email will be sent to <strong>{{ order.email }}</strong>.</p>
+                <h3><a href="{% url 'feedback' %}" class="feedback-btn rounded-0 text-uppercase py-3">Leave Feedback</a></h3>
+               
             </div>
         </div>
+        <hr>
 
         <div class="row">
             <div class="col-12 col-lg-7">

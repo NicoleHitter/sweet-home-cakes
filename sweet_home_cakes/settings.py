@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'profiles',
+    'feedback',
 
     # Other
     'crispy_forms',
@@ -74,6 +75,8 @@ TEMPLATES = [
         'DIRS': [
             os.path.join(BASE_DIR, 'templates'),
             os.path.join(BASE_DIR, 'templates', 'allauth'),
+            os.path.join(BASE_DIR, 'checkout', 'confirmation_emails'),
+            os.path.join(BASE_DIR, 'feedback', 'templates'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
