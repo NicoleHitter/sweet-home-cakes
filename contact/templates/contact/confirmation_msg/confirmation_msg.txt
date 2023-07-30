@@ -1,0 +1,13 @@
+
+Hello {{ name }}!
+
+Thank you for contacting us. 
+A team member will be in touch as soon as possible.
+
+This is what we received from you.
+
+{{ original_message }}
+
+
+Many thanks,
+The Sweet Home Cakes team.
