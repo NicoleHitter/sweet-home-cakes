@@ -33,7 +33,7 @@ SECRET_KEY = 'django-insecure-=^jwj4&xpwf48mdk=#o!%lzsf=m785wk&$d47en$b_v==a5u=6
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['sweet-home-cakes-5f6937a7c043.herokuapp.com', '8000-nicolehitte-sweethomeca-lnammd8t8xs.ws-eu102.gitpod.io']
 
