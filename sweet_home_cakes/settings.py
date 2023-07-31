@@ -12,17 +12,20 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 import django
 import dj_database_url
-import env
+
 from django.apps import apps
 from django.contrib.messages import constants as messages
 from pathlib import Path
+
+if os.path.isfile("env.py"):
+    import env
 
 development=os.environ.get('DEVELOPMENT', False)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-TEMPLATES_DIR = os.path.join(BASE-DIR, 'templates')
+TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
 
 # Quick-start development settings - unsuitable for production
@@ -35,7 +38,7 @@ SECRET_KEY = 'django-insecure-=^jwj4&xpwf48mdk=#o!%lzsf=m785wk&$d47en$b_v==a5u=6
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['sweet-home-cakes-5f6937a7c043.herokuapp.com', '8000-nicolehitte-sweethomeca-lnammd8t8xs.ws-eu102.gitpod.io']
+ALLOWED_HOSTS = ['NicoleHitter/sweet-home-cakes.herokuapp.com']
 
 
 # Application definition
