@@ -38,7 +38,7 @@ SECRET_KEY = 'django-insecure-=^jwj4&xpwf48mdk=#o!%lzsf=m785wk&$d47en$b_v==a5u=6
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['NicoleHitter/sweet-home-cakes.herokuapp.com']
+ALLOWED_HOSTS = ['sweet-home-cakes-5f6937a7c043.herokuapp.com']
 
 
 # Application definition
