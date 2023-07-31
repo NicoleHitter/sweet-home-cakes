@@ -12,13 +12,17 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 import django
 import dj_database_url
+import env
 from django.apps import apps
 from django.contrib.messages import constants as messages
 from pathlib import Path
 
+development=os.environ.get('DEVELOPMENT', False)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+TEMPLATES_DIR = os.path.join(BASE-DIR, 'templates')
 
 
 # Quick-start development settings - unsuitable for production
@@ -29,9 +33,9 @@ SECRET_KEY = 'django-insecure-=^jwj4&xpwf48mdk=#o!%lzsf=m785wk&$d47en$b_v==a5u=6
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['sweet-home-cakes-5f6937a7c043.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['sweet-home-cakes-5f6937a7c043.herokuapp.com', '8000-nicolehitte-sweethomeca-lnammd8t8xs.ws-eu102.gitpod.io']
 
 
 # Application definition
@@ -178,11 +182,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaHashedCloudinaryStorage'
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
