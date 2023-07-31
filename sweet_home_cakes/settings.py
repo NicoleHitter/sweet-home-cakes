@@ -40,6 +40,10 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['sweet-home-cakes-5f6937a7c043.herokuapp.com']
 
+CLOUDINARY_STORAGE = {
+    'CLOUDINARY_URL': os.environ.get('CLOUDINARY_URL')
+}
+
 
 # Application definition
 
