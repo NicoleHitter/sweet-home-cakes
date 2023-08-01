@@ -33,18 +33,6 @@ class Product(models.Model):
     def __str__(self):
         return self.name
 
-class ProductReview(models.Model):
-    """
-    Model for product reviews
-    """
-    product = models.ForeignKey(
-        Product, related_name='reviews', on_delete=models.CASCADE)
-    user = models.ForeignKey(
-        User, related_name='reviews', on_delete=models.CASCADE)
-    content = models.TextField(blank=True, null=True)
-    stars = models.IntegerField()
-
-
 
 class Wishlist(models.Model):
     """
