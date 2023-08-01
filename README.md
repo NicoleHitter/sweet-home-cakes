@@ -7,7 +7,7 @@ This website has been created as the Fifth Milestone Project for Code Institute'
 
 ![Responsiveness](static/doc/screenshots/responsiveness.jpeg)
 
-[Live Version]()
+[Live Version](https://sweet-home-cakes-5f6937a7c043.herokuapp.com/)
 
 ## Site Goals:
 * Allow users to create an account 
@@ -60,6 +60,8 @@ This project was developed with agile planning. This means that each feature was
   * Be able to see details of the customers.
   * Be able to view messages and feedback from users.
   * Be able to add or remove products. 
+
+![DjangoAdminPage](/static/doc/wireframes/djangoadmin.png)
 
 ## Development Planes
 ### Strategy
