@@ -7,9 +7,11 @@ html {
 body {
     background: url('/media/backgroundimage.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
+    min-height: 100vh ;
     color: #555;
     font-family: 'Lato';
+    display: flex;
+    flex-direction: column;
 }
 
 .main-question {
@@ -24,7 +26,7 @@ body {
 
 }
 
-/* from Bulma */
+/* from Bulma  164*/
 .icon {
     align-items: center;
     display: inline-flex;
@@ -165,6 +167,10 @@ footer {
 /* a hover effect*/
 .fa:hover {
     opacity: 0.7;
+}
+
+footer{
+    margin-top: auto;
 }
 
 /* -------------------------------- Media Queries */
