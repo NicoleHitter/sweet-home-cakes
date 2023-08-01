@@ -90,9 +90,11 @@ The information above has been used then to create the structure of the site. Th
 ### Wireframes 
 Before building, and planning this website I used the design tool Balsamiq, to create a wireframe for the project. It allowed me to make a basic sketch of what I wanted the website to look like, what features to include and where to place them. This proved to be very useful as I could base my decisions on the already sketched-out wireframe when building the website.
 
-![Wireframe1](/static/doc/wireframes/wireframe1.jpeg)
+![Wireframe1](/static/doc/wireframes/Homewireframe.jpeg)
 
-![Wireframe1](/static/doc/wireframes/wireframe2.jpeg)
+![Wireframe1](/static/doc/wireframes/Registerwireframe.jpeg)
+
+![Wireframe1](/static/doc/wireframes/Cakeswireframe.jpeg)
 
 ### Surface
 #### Style and colours
@@ -116,7 +118,7 @@ The font style used is Bacasime Antique, Lato and Georgia from Google Fonts.
   On smaller screens, all the above features collapse under a hamburger menu, except for the logo which always stays on the left of the navigation bar. Underneath these there is another smaller navbar from where user can look at products, by categories or see them all. 
 
   3.  Making an Order
-  ![Cakes](/static/doc/screenshots/.jpeg)
+  ![Cakes](/static/doc/screenshots/Products.jpeg)
   From the products user can select a specific product and then will be directed to a product's details page. Once here user can see product's details, rating and price, add this to cart and, if logged in, can add this to favourites.
 
   4. Register
@@ -124,7 +126,7 @@ The font style used is Bacasime Antique, Lato and Georgia from Google Fonts.
   On the register page user will have to fill in their details, register and then log in, to be able to see orders and make favoruites list.  
  
   5. Orders 
-  ![Orders](/static/doc/screenshots/orders.jpeg)
+  ![Orders](/static/doc/screenshots/ProductDetail.jpeg)
   Once logged in user can add products to your list or delete them and see orders. 
 
   6. Footer 
@@ -132,11 +134,12 @@ The font style used is Bacasime Antique, Lato and Georgia from Google Fonts.
   The footer section is present on all pages and it includes links to all social media pages and from there user can contact bakery. It is useful for the user as it encourages them to keep connected through social media and it also helps the bakery, as it increases publicity.
 
   7. Cart
-  ![Cart](/static/doc/screenshots/cart.jpeg)
-  Once on cart page user can fill in details of the delivery address and cart details and then make purchase.
+  ![Cart](/static/doc/screenshots/bag.jpeg)
+  Once on cart page user can fill in details of the delivery address and cart details and then make purchase. Once that done they will be taken to another page where they can see all details of their order. 
+  ![OrderConfirmation](/static/doc/screenshots/OrderConfirmation.jpeg)
 
   8. Leave Feedback
-  ![Feedback](/static/doc/screenshots/feedback.jpeg)
+  ![Feedback](/static/doc/screenshots/Feedback.jpeg)
   Once purchase made they will be presented with confirmed order details and they will have the option to leave a feedback.
 
   9. Favourites
