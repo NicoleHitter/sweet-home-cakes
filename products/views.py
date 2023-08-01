@@ -7,7 +7,7 @@ from django.conf import settings
 from django.core.mail import send_mail
 from django.contrib.auth.models import User
 
-from .models import Product, Category, Wishlist
+from .models import Product, Category, ProductReview, Wishlist
 from .forms import ProductForm, ReviewForm
 
 # Create your views here.
@@ -88,7 +88,6 @@ def product_detail(request, product_id):
             review.product = product
             review = form.save()
             messages.success(request, 'Successfully added review!')
-            
             return redirect(reverse('product_detail', args=[product.id]))
         else:
             messages.error(request, 'Failed to add review.\
