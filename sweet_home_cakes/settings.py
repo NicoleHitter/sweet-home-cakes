@@ -32,11 +32,11 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-=^jwj4&xpwf48mdk=#o!%lzsf=m785wk&$d47en$b_v==a5u=6'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['sweet-home-cakes-5f6937a7c043.herokuapp.com','8000-nicolehitte-sweethomeca-lnammd8t8xs.ws-eu102.gitpod.io']
 
@@ -53,12 +53,12 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'cloudinary_storage',
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'allauth',
     'allauth.account',
-    'allauth.socialaccount',
-    'cloudinary_storage',
+    'allauth.socialaccount',  
     'cloudinary',
     'home',
     'products',
