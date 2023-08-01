@@ -229,3 +229,5 @@ def remove_from_wishlist(request, wishlist_id):
             return redirect(referer)
     else:
         return redirect('wishlist')
+
+

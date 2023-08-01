@@ -17,6 +17,10 @@ class Category(models.Model):
 
 class Product(models.Model):
 
+    
+    class Meta:
+        ordering = ('-name',)
+
     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
@@ -39,7 +43,7 @@ class ProductReview(models.Model):
         User, related_name='reviews', on_delete=models.CASCADE)
     content = models.TextField(blank=True, null=True)
     stars = models.IntegerField()
-    date = models.DateTimeField(auto_now_add=True)
+
 
 
 class Wishlist(models.Model):
