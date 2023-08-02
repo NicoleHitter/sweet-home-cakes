@@ -1,11 +1,11 @@
-# Restaurant Booking NH
+# Sweet Home Cakes
 ## Introduction
 This website is designed for a fictional bakery restaurant. Through Sweet Home Cakes users can see bakery products, then order online, create an account, log in, leave a review, add products to favourite lists. 
 
 This website has been created as the Fifth Milestone Project for Code Institute's Full Stack Software Development Diploma - E-Commerce Specialization and was built using Full Stack Toolkit. The project is using Django, Python, HTML and CSS as the main technologies. 
 
 
-![Responsiveness](static/doc/screenshots/responsiveness.jpeg)
+![Responsiveness](/static/doc/screenshots/responsiveness.jpeg)
 
 [Live Version](https://sweet-home-cakes-5f6937a7c043.herokuapp.com/)
 
@@ -61,7 +61,7 @@ This project was developed with agile planning. This means that each feature was
   * Be able to view messages and feedback from users.
   * Be able to add or remove products. 
 
-![DjangoAdminPage](/static/doc/wireframes/djangoadmin.png)
+![DjangoAdmin](/static/doc/screenshots/djangoadmin.jpeg)
 
 ## Development Planes
 ### Strategy
@@ -233,9 +233,8 @@ Manual testing was conducted on the following elements that appear on every page
 
 
 ## Fixed Bugs 
-* I was unable to migrate because of an error: column "email" not found. I struggled to understand this at first as wouldn't get from where was coming. I spent about two hours with my mentor that has guided me and helped me understand that I would have to erase this email col from the database and then add it again, changes to the migration files had to be done subsequently. We still did not find the reason for this error but we have managed to resolve it. 
-* When using screens smaller than 400px there would be an extra white space on the right side of the page which was coming from a margin of the col-md-5 that has previously been set in "%". Once that measurement changed to px space disappeared. 
-* Previously users would be able to make more bookings on the same day and at the same time, which has been changed by adding constraints to the data model. 
+* Footer was not sitting at bottom of page so had to change css details for it.  
+* Initially project did not load into elephant database so heroku could not find it. Had to use dumpdata command for each model not present there and then to load data.
 
 
 # Deployment
@@ -250,7 +249,11 @@ The following are the steps I went through to deploy my live site:
     * SECRET_KEY: The Secret Key for your project
     * DATABASE_URL: The URL from your ElephantSQL dashboard
     * CLOUNDINARY_URL: The URL from your Cloudinary dashboard
-    * PORT: 8000
+    * EMAIL_HOST_PASS
+    * EMAIL_HOST_USER
+    * STRIPE_PUBLIC_KEY
+    * STRIPE_SECRET_KEY
+    * STRIPE_WH_SECRET
 6. Navigate to the 'Deploy' section. 
 7. Connect to GitHub, search for your repo and confirm. 
 8. Choose branch to deploy.
