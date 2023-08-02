@@ -24,6 +24,11 @@ body {
     margin-left: 6%;
 }
 
+.container {
+    margin: 10% 10% 10% 10%;
+    position: auto;
+}
+
 /* from Bulma  164*/
 .icon {
     align-items: center;
