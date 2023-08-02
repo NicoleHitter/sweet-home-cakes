@@ -44,7 +44,7 @@ This website has been created as the Fifth Milestone Project for Code Institute'
 ## User Stories 
 This project was developed with agile planning. This means that each feature was split first into User Stories for what the user of the website would expect. GitHub issues were used to record all the user stories. As the project progressed each story was then moved from 'To Do' to 'In Progress' to 'Done'.
 
-![User Stories](static/doc/screenshots/UserStories.jpeg)
+![User Stories](static/doc/screenshots/userstories.jpeg)
 
 * As a customer you will:
   * Be able to create an account.
