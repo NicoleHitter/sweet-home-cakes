@@ -274,4 +274,8 @@ footer{
         font-size: 1rem;
     }
 
+    .main-question {
+        margin-left: 0;
+    }
+
 }
