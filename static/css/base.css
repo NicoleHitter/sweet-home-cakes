@@ -5,6 +5,7 @@ html {
 }
 
 body {
+    padding-top: 160px;
     background: url('https://res.cloudinary.com/dwibbq7wr/image/upload/v1690924463/media/F630392D-DA10-45F7-AE99-C3375A63300D_f0gel7.jpg') no-repeat center center fixed;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
