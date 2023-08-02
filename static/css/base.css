@@ -27,6 +27,7 @@ body {
 .container {
     margin: 10% 10% 10% 10%;
     position: auto;
+    width: 80%;
 }
 
 /* from Bulma  164*/
