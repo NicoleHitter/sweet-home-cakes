@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load bag_tools %}
 
 {% block page_header %}
     <div class="container header-container">
@@ -10,10 +11,10 @@
 {% endblock %}
 
 {% block content %}
-   
-        <div class="row">
-            <div class=" main-question">
-                <h1>
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class=" main-question col-md-6 my-auto">
+                <h1 class="display-4 logo-font">
                     Looking for a sweet moment?
                 </h1>
                 <div class="my-5">
@@ -22,6 +23,6 @@
                     </h4>
                 </div>
             </div>
-      
+        </div>
     </div>
 {% endblock %}
