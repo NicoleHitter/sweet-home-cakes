@@ -104,11 +104,6 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
-.container {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
@@ -189,17 +184,6 @@ footer{
         left: 0;
         z-index: 1030;
     }
-    
-    .main-question {
-        margin-left: 0;
-    }
-    .container {
-        max-width: 80%;
-      }
-    
-    .h-100 {
-        height: 50%;
-    }
 }
 
 /* Allauth form formatting */
@@ -258,3 +242,30 @@ footer{
 
 /* fixed top navbar only on medium and up */ 
 
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
+
+    .display-4.logo-font.text-black {
+        font-size: 2rem;
+    }
+
+    .nav-link {
+        padding: 0.15rem;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+
+    .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 1rem;
+    }
+
+}
