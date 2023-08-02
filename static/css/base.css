@@ -275,7 +275,7 @@ footer{
     }
 
     .main-question {
-        margin-left: 0;
+        max-width: 90%;
     }
 
 }
