@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /accounts/
+
+Disallow: https://sweet-home-cakes-5f6937a7c043.herokuapp.com/sitemap.xml
