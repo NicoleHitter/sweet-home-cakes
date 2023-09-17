@@ -170,6 +170,19 @@ footer{
     background-color: #ceafdb;
 }
 
+.contact {
+    margin-top: 2%;
+}
+
+#mc_embed_signup {
+    margin-top: 0;
+    background: #ceafdb;  
+    text-align: center;
+    text-transform: uppercase;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgb(66, 63, 22);    
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
