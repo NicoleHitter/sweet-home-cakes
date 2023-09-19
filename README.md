@@ -235,6 +235,21 @@ Manual testing was conducted on the following elements that appear on every page
 * Footer was not sitting at bottom of page so had to change css details for it.  
 * Initially project did not load into elephant database so heroku could not find it. Had to use dumpdata command for each model not present there and then to load data.
 
+# Database
+  * To create a managed Postgres database go to ElephantSQL and Signup/Signin to your account.
+
+  * Click on 'Create New Instance'.
+
+  * Name your database, choose the 'Tiny Turtle' payment plan and click 'Select Region'.
+
+  * Choose your region and then create the database.
+
+  * In the instances page, click the name of your chosen database.
+
+  * In the 'details' section of the following page copy the Postgres url.
+
+  * You can now use this URL when linking the database to the project's GitHub repository.
+
 
 # Deployment
 The following are the steps I went through to deploy my live site:
@@ -276,6 +291,30 @@ The following are the steps I went through to deploy my live site:
   * Type git clone, and then paste the URL you copied earlier.
   * Press Enter. Your local clone will be created.
 
+# Google Mail
+  * Create a google email account with a name relevant to you project. After you login, navigate to accounts settings, then click on Other Google Account Settings
+  * Navigate to accounts then import and click on other account settings
+  * In the signing into Google section, activate 2-step verification.
+  * Once verified click on app passwords, select Other as the app and give the password a name, for example Django
+  * Click create and a 16 digit password will be generated, copy this 16 digit password
+  * Add the following Email settings to the settings.py file
+
+
+  * Add EMAIL_HOST_PASS and EMAIL_HOST_USER variable, password and email address to your Heroku Config Vars
+
+# Stripe
+  * Open a Stripe Account
+  * Log in and click on 'Developers
+  * Navigate to API keys
+      * STRIPE_CURRENCY = 'usd'
+      * STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY','')
+      * STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY','')
+      * STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
+  * Copy the the publishable and secret keys
+  * Add the following in Settings.py
+  *Back in the Developers section on Stripe stripe navigate to webhooks and click create endpoint.
+
+Create a webhook for all events in Stripe and save the key
 
 # Credits
 
