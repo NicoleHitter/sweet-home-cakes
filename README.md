@@ -28,6 +28,7 @@ This website has been created as the Fifth Milestone Project for Code Institute'
     * [Structure](#structure)
     * [Wireframes](#wireframes)
     * [Surface](#surface)
+  * [Web Marketing](#web-marketing)
 2. [Features](#features)
 3. [Technologies](#technologies)
 4. [Manual Testing](#manual-testing)
@@ -37,7 +38,9 @@ This website has been created as the Fifth Milestone Project for Code Institute'
   * [Features Testing](#features-testing)
 5. [Validation](#validation)
 6. [Deployment](#deployment)
-7. [Credits](#credits)
+7. [Google Mail](#google-mail)
+8. [Stripe](#stripe)
+9. [Credits](#credits)
 
 
 # UX
@@ -99,13 +102,19 @@ Before building, and planning this website I used the design tool Balsamiq, to c
 
 ### Surface
 #### Style and colours
-The style I was aiming for in the end would be an elegant and warm impression and I wanted it to be a theme throughout the entire website. 
-
+The style I was aiming for in the end would be an elegant and warm impression and I wanted it to be a theme throughout the entire website.
 Colours have been specified in CSS by hexadecimal (or hex) values. The colours used are complementary.
-
 The navigation bar is lila and the content is light pink. The footer is lila which fits well with the rest of the colours.
-
 The font style used is Bacasime Antique, Lato and Georgia from Google Fonts. 
+
+# Web Marketing
+The use of social media marketing is very important for bringing in customers and increasing visibility of the site. The approved way to generate interest is an organic approach as the marketing budget will be small initially.
+Facebook marketing is often more important than any other platform, we are using it for this project. Page might still be visible here [Facebook Page](https://www.facebook.com/profile.php?id=61551003403955).
+
+Image of the Facebook site can be seen as follows:
+
+![Wireframe1](/static/doc/wireframes/facebook.jpg)
+
 
 # Features
 ## Existing Features
