@@ -36,7 +36,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = True
+DEBUG = Falses
 
 ALLOWED_HOSTS = ['sweet-home-cakes-5f6937a7c043.herokuapp.com','8000-nicolehitte-sweethomeca-lnammd8t8xs.ws-eu102.gitpod.io', '8000-nicolehitte-sweethomeca-x9rybfn3qj6.ws-eu104.gitpod.io', '8000-nicolehitte-sweethomeca-x9rybfn3qj6.ws-eu105.gitpod.io']
 
